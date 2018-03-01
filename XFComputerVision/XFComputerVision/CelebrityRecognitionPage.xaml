@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" Title="Celebrity"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             x:Class="XFComputerVision.CelebrityRecognitionPage">
+  <StackLayout Orientation="Vertical">
+    <Button x:Name="TakePictureButton" Clicked="TakePictureButton_Clicked"
+          Text="Take from camera"/>
+    <Button x:Name="UploadPictureButton" Clicked="UploadPictureButton_Clicked"
+        Text="Pick a photo"/>
+    <ActivityIndicator x:Name="Indicator1" IsVisible="False" IsRunning="False" />
+    <Image x:Name="Image1" HeightRequest="240" />
+
+    <Label x:Name="CelebrityName"/>
+  </StackLayout>
+</ContentPage>
